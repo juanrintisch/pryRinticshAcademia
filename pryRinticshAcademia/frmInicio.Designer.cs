@@ -28,33 +28,54 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmInicio));
             this.btnInicio = new System.Windows.Forms.Button();
+            this.lblTitulo = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btnInicio
             // 
-            this.btnInicio.Location = new System.Drawing.Point(47, 98);
+            this.btnInicio.BackColor = System.Drawing.Color.LightBlue;
+            this.btnInicio.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnInicio.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnInicio.Location = new System.Drawing.Point(94, 100);
             this.btnInicio.Name = "btnInicio";
             this.btnInicio.Size = new System.Drawing.Size(75, 23);
             this.btnInicio.TabIndex = 0;
             this.btnInicio.Text = "Inicio";
-            this.btnInicio.UseVisualStyleBackColor = true;
+            this.btnInicio.UseVisualStyleBackColor = false;
+            this.btnInicio.Click += new System.EventHandler(this.btnInicio_Click);
+            // 
+            // lblTitulo
+            // 
+            this.lblTitulo.AutoSize = true;
+            this.lblTitulo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTitulo.Location = new System.Drawing.Point(73, 55);
+            this.lblTitulo.Name = "lblTitulo";
+            this.lblTitulo.Size = new System.Drawing.Size(119, 20);
+            this.lblTitulo.TabIndex = 1;
+            this.lblTitulo.Text = "BIENVENIDO";
             // 
             // frmInicio
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(745, 466);
+            this.ClientSize = new System.Drawing.Size(273, 177);
+            this.Controls.Add(this.lblTitulo);
             this.Controls.Add(this.btnInicio);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmInicio";
-            this.Text = "Bienvenido!!!";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Registro - inicio";
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
 
         private System.Windows.Forms.Button btnInicio;
+        private System.Windows.Forms.Label lblTitulo;
     }
 }
 

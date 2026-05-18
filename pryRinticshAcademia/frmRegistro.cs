@@ -10,18 +10,16 @@ using System.Windows.Forms;
 
 namespace pryRinticshAcademia
 {
-    public partial class frmInicio : Form
+    public partial class frmRegistro : Form
     {
-        public frmInicio()
+        public frmRegistro()
         {
             InitializeComponent();
         }
 
-        private void btnInicio_Click(object sender, EventArgs e)
+        private void btnListado_Click(object sender, EventArgs e)
         {
-            frmRegistro frmRegistro = new frmRegistro();
-            this.Hide();
-            frmRegistro.ShowDialog();
+            Size = new Size(351, 405);
         }
     }
 }
