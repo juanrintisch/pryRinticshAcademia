@@ -27,6 +27,7 @@ namespace pryRinticshAcademia
         {           
            
             varIncioSesion = DateTime.Now;
+
             frmRegistro frmRegistro = new frmRegistro();
             this.Hide();
             frmRegistro.ShowDialog();

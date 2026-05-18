@@ -36,11 +36,17 @@ namespace pryRinticshAcademia
         private void frmRegistro_Load(object sender, EventArgs e)
         {
             this.Size = new Size(351, 249);
+            frmRegistro frmRegistro = new frmRegistro();
+            frmRegistro.varIncioSesion = DateTime.Now;
+            lblIncioSesion.Text = frmRegistro.varIncioSesion.ToString();
+
         }
 
         private void btnRegistrar_Click(object sender, EventArgs e)
         {
             
+            
+
             if (mskCodigo.Text=="")
             {
                 MessageBox.Show("Ingrese un Codigo", "Registro - Info", MessageBoxButtons.OK, MessageBoxIcon.Information);
