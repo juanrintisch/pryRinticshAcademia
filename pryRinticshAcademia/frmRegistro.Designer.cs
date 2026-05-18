@@ -170,8 +170,8 @@
             // lblIncioSesion
             // 
             this.lblIncioSesion.Name = "lblIncioSesion";
-            this.lblIncioSesion.Size = new System.Drawing.Size(10, 17);
-            this.lblIncioSesion.Text = ".";
+            this.lblIncioSesion.Size = new System.Drawing.Size(12, 17);
+            this.lblIncioSesion.Text = "-";
             // 
             // frmRegistro
             // 
