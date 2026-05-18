@@ -46,7 +46,6 @@ namespace pryRinticshAcademia
         {
             
             
-
             if (mskCodigo.Text=="")
             {
                 MessageBox.Show("Ingrese un Codigo", "Registro - Info", MessageBoxButtons.OK, MessageBoxIcon.Information);

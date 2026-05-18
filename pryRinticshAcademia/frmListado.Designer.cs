@@ -100,6 +100,7 @@
             this.rdoNombre.TabStop = true;
             this.rdoNombre.Text = "Nombre";
             this.rdoNombre.UseVisualStyleBackColor = true;
+            this.rdoNombre.CheckedChanged += new System.EventHandler(this.rdoNombre_CheckedChanged);
             // 
             // rdoPlan
             // 
@@ -111,6 +112,7 @@
             this.rdoPlan.TabStop = true;
             this.rdoPlan.Text = "Plan";
             this.rdoPlan.UseVisualStyleBackColor = true;
+            this.rdoPlan.CheckedChanged += new System.EventHandler(this.rdoPlan_CheckedChanged);
             // 
             // rdoCodigo
             // 
@@ -122,6 +124,7 @@
             this.rdoCodigo.TabStop = true;
             this.rdoCodigo.Text = "Codigo";
             this.rdoCodigo.UseVisualStyleBackColor = true;
+            this.rdoCodigo.CheckedChanged += new System.EventHandler(this.rdoCodigo_CheckedChanged);
             // 
             // rdoTodo
             // 
@@ -138,7 +141,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(264, 191);
+            this.ClientSize = new System.Drawing.Size(258, 184);
             this.Controls.Add(this.grpBuscar);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmListado";
