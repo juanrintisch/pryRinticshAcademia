@@ -40,6 +40,9 @@
             this.btnListado = new System.Windows.Forms.Button();
             this.btnCancelar = new System.Windows.Forms.Button();
             this.btnRegistrar = new System.Windows.Forms.Button();
+            this.barraInferior = new System.Windows.Forms.StatusStrip();
+            this.lblIncioSesion = new System.Windows.Forms.ToolStripStatusLabel();
+            this.barraInferior.SuspendLayout();
             this.SuspendLayout();
             // 
             // lblcodigo
@@ -154,11 +157,28 @@
             this.btnRegistrar.UseVisualStyleBackColor = false;
             this.btnRegistrar.Click += new System.EventHandler(this.btnRegistrar_Click);
             // 
+            // barraInferior
+            // 
+            this.barraInferior.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.lblIncioSesion});
+            this.barraInferior.Location = new System.Drawing.Point(0, 188);
+            this.barraInferior.Name = "barraInferior";
+            this.barraInferior.Size = new System.Drawing.Size(335, 22);
+            this.barraInferior.TabIndex = 11;
+            this.barraInferior.Text = "statusStrip1";
+            // 
+            // lblIncioSesion
+            // 
+            this.lblIncioSesion.Name = "lblIncioSesion";
+            this.lblIncioSesion.Size = new System.Drawing.Size(10, 17);
+            this.lblIncioSesion.Text = ".";
+            // 
             // frmRegistro
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(335, 194);
+            this.ClientSize = new System.Drawing.Size(335, 210);
+            this.Controls.Add(this.barraInferior);
             this.Controls.Add(this.btnRegistrar);
             this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.btnListado);
@@ -175,6 +195,8 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Registro - Materia";
             this.Load += new System.EventHandler(this.frmRegistro_Load);
+            this.barraInferior.ResumeLayout(false);
+            this.barraInferior.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -193,5 +215,7 @@
         private System.Windows.Forms.Button btnListado;
         private System.Windows.Forms.Button btnCancelar;
         private System.Windows.Forms.Button btnRegistrar;
+        private System.Windows.Forms.StatusStrip barraInferior;
+        private System.Windows.Forms.ToolStripStatusLabel lblIncioSesion;
     }
 }

@@ -61,6 +61,7 @@
             // cmbPlanDos
             // 
             this.cmbPlanDos.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbPlanDos.Enabled = false;
             this.cmbPlanDos.FormattingEnabled = true;
             this.cmbPlanDos.Items.AddRange(new object[] {
             "a",
@@ -73,6 +74,7 @@
             // 
             // txtNombreDos
             // 
+            this.txtNombreDos.Enabled = false;
             this.txtNombreDos.Location = new System.Drawing.Point(76, 81);
             this.txtNombreDos.Name = "txtNombreDos";
             this.txtNombreDos.Size = new System.Drawing.Size(121, 20);
@@ -80,6 +82,7 @@
             // 
             // mskCodigoDos
             // 
+            this.mskCodigoDos.Enabled = false;
             this.mskCodigoDos.Location = new System.Drawing.Point(76, 49);
             this.mskCodigoDos.Mask = "99999";
             this.mskCodigoDos.Name = "mskCodigoDos";

@@ -10,8 +10,17 @@ using System.Windows.Forms;
 
 namespace pryRinticshAcademia
 {
+
     public partial class frmRegistro : Form
     {
+
+        public DateTime varIncioSesion;
+
+        int varCodigo;
+        string varNombre;
+        string varPlan;
+        bool varActivo;
+
         public frmRegistro()
         {
             InitializeComponent();
@@ -26,7 +35,7 @@ namespace pryRinticshAcademia
 
         private void frmRegistro_Load(object sender, EventArgs e)
         {
-            this.Size = new Size(351, 232);
+            this.Size = new Size(351, 249);
         }
 
         private void btnRegistrar_Click(object sender, EventArgs e)

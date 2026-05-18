@@ -26,7 +26,7 @@ namespace pryRinticshAcademia
         {
             if (rdoCodigo.Checked == true)
             {
-
+                
             }
         }
     }
