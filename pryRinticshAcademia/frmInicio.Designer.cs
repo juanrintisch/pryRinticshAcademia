@@ -67,6 +67,7 @@
             this.Name = "frmInicio";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Registro - inicio";
+            this.Load += new System.EventHandler(this.frmInicio_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

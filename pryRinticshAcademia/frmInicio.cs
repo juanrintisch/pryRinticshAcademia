@@ -23,5 +23,10 @@ namespace pryRinticshAcademia
             this.Hide();
             frmRegistro.ShowDialog();
         }
+
+        private void frmInicio_Load(object sender, EventArgs e)
+        {
+            this.Size = new Size(289, 216);
+        }
     }
 }

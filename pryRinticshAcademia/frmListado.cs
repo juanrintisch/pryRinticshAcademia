@@ -16,5 +16,18 @@ namespace pryRinticshAcademia
         {
             InitializeComponent();
         }
+
+        private void frmListado_Load(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void grpBuscar_Enter(object sender, EventArgs e)
+        {
+            if (rdoCodigo.Checked == true)
+            {
+
+            }
+        }
     }
 }
