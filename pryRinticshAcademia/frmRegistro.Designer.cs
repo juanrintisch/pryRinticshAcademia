@@ -41,13 +41,13 @@
             this.btnCancelar = new System.Windows.Forms.Button();
             this.btnRegistrar = new System.Windows.Forms.Button();
             this.grpBuscar = new System.Windows.Forms.GroupBox();
-            this.rdoTodo = new System.Windows.Forms.RadioButton();
-            this.rdoCodigo = new System.Windows.Forms.RadioButton();
-            this.rdoPlan = new System.Windows.Forms.RadioButton();
-            this.rdoNombre = new System.Windows.Forms.RadioButton();
-            this.mskCodigoDos = new System.Windows.Forms.MaskedTextBox();
-            this.txtNombreDos = new System.Windows.Forms.TextBox();
             this.cmbPlanDos = new System.Windows.Forms.ComboBox();
+            this.txtNombreDos = new System.Windows.Forms.TextBox();
+            this.mskCodigoDos = new System.Windows.Forms.MaskedTextBox();
+            this.rdoNombre = new System.Windows.Forms.RadioButton();
+            this.rdoPlan = new System.Windows.Forms.RadioButton();
+            this.rdoCodigo = new System.Windows.Forms.RadioButton();
+            this.rdoTodo = new System.Windows.Forms.RadioButton();
             this.grpBuscar.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -156,6 +156,7 @@
             this.btnRegistrar.TabIndex = 10;
             this.btnRegistrar.Text = "Registrar";
             this.btnRegistrar.UseVisualStyleBackColor = false;
+            this.btnRegistrar.Click += new System.EventHandler(this.btnRegistrar_Click);
             // 
             // grpBuscar
             // 
@@ -174,38 +175,29 @@
             this.grpBuscar.TabStop = false;
             this.grpBuscar.Text = "Buscar";
             // 
-            // rdoTodo
+            // cmbPlanDos
             // 
-            this.rdoTodo.AutoSize = true;
-            this.rdoTodo.Location = new System.Drawing.Point(6, 19);
-            this.rdoTodo.Name = "rdoTodo";
-            this.rdoTodo.Size = new System.Drawing.Size(54, 17);
-            this.rdoTodo.TabIndex = 0;
-            this.rdoTodo.TabStop = true;
-            this.rdoTodo.Text = "Todo";
-            this.rdoTodo.UseVisualStyleBackColor = true;
+            this.cmbPlanDos.FormattingEnabled = true;
+            this.cmbPlanDos.Location = new System.Drawing.Point(76, 113);
+            this.cmbPlanDos.Name = "cmbPlanDos";
+            this.cmbPlanDos.Size = new System.Drawing.Size(121, 21);
+            this.cmbPlanDos.TabIndex = 12;
             // 
-            // rdoCodigo
+            // txtNombreDos
             // 
-            this.rdoCodigo.AutoSize = true;
-            this.rdoCodigo.Location = new System.Drawing.Point(6, 50);
-            this.rdoCodigo.Name = "rdoCodigo";
-            this.rdoCodigo.Size = new System.Drawing.Size(64, 17);
-            this.rdoCodigo.TabIndex = 1;
-            this.rdoCodigo.TabStop = true;
-            this.rdoCodigo.Text = "Codigo";
-            this.rdoCodigo.UseVisualStyleBackColor = true;
+            this.txtNombreDos.Location = new System.Drawing.Point(76, 81);
+            this.txtNombreDos.Name = "txtNombreDos";
+            this.txtNombreDos.Size = new System.Drawing.Size(121, 20);
+            this.txtNombreDos.TabIndex = 12;
             // 
-            // rdoPlan
+            // mskCodigoDos
             // 
-            this.rdoPlan.AutoSize = true;
-            this.rdoPlan.Location = new System.Drawing.Point(6, 114);
-            this.rdoPlan.Name = "rdoPlan";
-            this.rdoPlan.Size = new System.Drawing.Size(50, 17);
-            this.rdoPlan.TabIndex = 2;
-            this.rdoPlan.TabStop = true;
-            this.rdoPlan.Text = "Plan";
-            this.rdoPlan.UseVisualStyleBackColor = true;
+            this.mskCodigoDos.Location = new System.Drawing.Point(76, 49);
+            this.mskCodigoDos.Mask = "99999";
+            this.mskCodigoDos.Name = "mskCodigoDos";
+            this.mskCodigoDos.Size = new System.Drawing.Size(39, 20);
+            this.mskCodigoDos.TabIndex = 12;
+            this.mskCodigoDos.ValidatingType = typeof(int);
             // 
             // rdoNombre
             // 
@@ -218,35 +210,44 @@
             this.rdoNombre.Text = "Nombre";
             this.rdoNombre.UseVisualStyleBackColor = true;
             // 
-            // mskCodigoDos
+            // rdoPlan
             // 
-            this.mskCodigoDos.Location = new System.Drawing.Point(76, 49);
-            this.mskCodigoDos.Mask = "99999";
-            this.mskCodigoDos.Name = "mskCodigoDos";
-            this.mskCodigoDos.Size = new System.Drawing.Size(39, 20);
-            this.mskCodigoDos.TabIndex = 12;
-            this.mskCodigoDos.ValidatingType = typeof(int);
+            this.rdoPlan.AutoSize = true;
+            this.rdoPlan.Location = new System.Drawing.Point(6, 114);
+            this.rdoPlan.Name = "rdoPlan";
+            this.rdoPlan.Size = new System.Drawing.Size(50, 17);
+            this.rdoPlan.TabIndex = 2;
+            this.rdoPlan.TabStop = true;
+            this.rdoPlan.Text = "Plan";
+            this.rdoPlan.UseVisualStyleBackColor = true;
             // 
-            // txtNombreDos
+            // rdoCodigo
             // 
-            this.txtNombreDos.Location = new System.Drawing.Point(76, 81);
-            this.txtNombreDos.Name = "txtNombreDos";
-            this.txtNombreDos.Size = new System.Drawing.Size(121, 20);
-            this.txtNombreDos.TabIndex = 12;
+            this.rdoCodigo.AutoSize = true;
+            this.rdoCodigo.Location = new System.Drawing.Point(6, 50);
+            this.rdoCodigo.Name = "rdoCodigo";
+            this.rdoCodigo.Size = new System.Drawing.Size(64, 17);
+            this.rdoCodigo.TabIndex = 1;
+            this.rdoCodigo.TabStop = true;
+            this.rdoCodigo.Text = "Codigo";
+            this.rdoCodigo.UseVisualStyleBackColor = true;
             // 
-            // cmbPlanDos
+            // rdoTodo
             // 
-            this.cmbPlanDos.FormattingEnabled = true;
-            this.cmbPlanDos.Location = new System.Drawing.Point(76, 113);
-            this.cmbPlanDos.Name = "cmbPlanDos";
-            this.cmbPlanDos.Size = new System.Drawing.Size(121, 21);
-            this.cmbPlanDos.TabIndex = 12;
+            this.rdoTodo.AutoSize = true;
+            this.rdoTodo.Location = new System.Drawing.Point(6, 19);
+            this.rdoTodo.Name = "rdoTodo";
+            this.rdoTodo.Size = new System.Drawing.Size(54, 17);
+            this.rdoTodo.TabIndex = 0;
+            this.rdoTodo.TabStop = true;
+            this.rdoTodo.Text = "Todo";
+            this.rdoTodo.UseVisualStyleBackColor = true;
             // 
             // frmRegistro
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(335, 193);
+            this.ClientSize = new System.Drawing.Size(335, 371);
             this.Controls.Add(this.grpBuscar);
             this.Controls.Add(this.btnRegistrar);
             this.Controls.Add(this.btnCancelar);
@@ -263,6 +264,7 @@
             this.Name = "frmRegistro";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Registro - Materia";
+            this.Load += new System.EventHandler(this.frmRegistro_Load);
             this.grpBuscar.ResumeLayout(false);
             this.grpBuscar.PerformLayout();
             this.ResumeLayout(false);

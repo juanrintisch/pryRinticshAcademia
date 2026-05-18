@@ -19,7 +19,33 @@ namespace pryRinticshAcademia
 
         private void btnListado_Click(object sender, EventArgs e)
         {
-            Size = new Size(351, 405);
+            if (Height == 405)
+                Size = new Size(351, 232);
+            else
+                Size = new Size(351, 405);
+        }
+
+        private void frmRegistro_Load(object sender, EventArgs e)
+        {
+            this.Size = new Size(351, 232);
+        }
+
+        private void btnRegistrar_Click(object sender, EventArgs e)
+        {
+            
+            if (mskCodigo.Text=="")
+            {
+                MessageBox.Show("Ingrese un Codigo", "Registro - Info", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            else if (txtNombre.Text=="")
+            {
+                MessageBox.Show("Ingrese un Nombre", "Registro - Info", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            else if (cmbPlan.SelectedIndex==-1)
+            {
+                MessageBox.Show("Seleccione un Plan", "Registro - Info", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            
         }
     }
 }
