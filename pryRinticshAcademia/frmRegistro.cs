@@ -60,7 +60,10 @@ namespace pryRinticshAcademia
             {
                 MessageBox.Show("Seleccione un Plan", "Registro - Info", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
-           
+            else
+            {
+                
+            }
         }
     }
 }
