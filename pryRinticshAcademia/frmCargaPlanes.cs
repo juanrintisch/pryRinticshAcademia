@@ -35,6 +35,11 @@ namespace pryRinticshAcademia
                 varIndice++;
                 txtNombrePlan.Clear();
                 MessageBox.Show("Plan Agregado con Exito", "Carga Planes - Info", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                if (varIndice >= arrayPlan.Length)
+                {
+                    txtNombrePlan.Enabled = false;
+                    btnAgregar.Enabled = false;
+                }
             }
         }
     }

@@ -42,6 +42,7 @@
             this.btnRegistrar = new System.Windows.Forms.Button();
             this.barraInferior = new System.Windows.Forms.StatusStrip();
             this.lblIncioSesion = new System.Windows.Forms.ToolStripStatusLabel();
+            this.btnPlanes = new System.Windows.Forms.Button();
             this.barraInferior.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -173,11 +174,22 @@
             this.lblIncioSesion.Size = new System.Drawing.Size(12, 17);
             this.lblIncioSesion.Text = "-";
             // 
+            // btnPlanes
+            // 
+            this.btnPlanes.Location = new System.Drawing.Point(214, 82);
+            this.btnPlanes.Name = "btnPlanes";
+            this.btnPlanes.Size = new System.Drawing.Size(109, 23);
+            this.btnPlanes.TabIndex = 12;
+            this.btnPlanes.Text = "Registrar Planes";
+            this.btnPlanes.UseVisualStyleBackColor = true;
+            this.btnPlanes.Click += new System.EventHandler(this.btnPlanes_Click);
+            // 
             // frmRegistro
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(335, 210);
+            this.Controls.Add(this.btnPlanes);
             this.Controls.Add(this.barraInferior);
             this.Controls.Add(this.btnRegistrar);
             this.Controls.Add(this.btnCancelar);
@@ -217,5 +229,6 @@
         private System.Windows.Forms.Button btnRegistrar;
         private System.Windows.Forms.StatusStrip barraInferior;
         private System.Windows.Forms.ToolStripStatusLabel lblIncioSesion;
+        private System.Windows.Forms.Button btnPlanes;
     }
 }

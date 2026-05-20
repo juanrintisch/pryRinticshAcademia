@@ -73,7 +73,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(475, 406);
+            this.ClientSize = new System.Drawing.Size(445, 375);
             this.Controls.Add(this.btnListar);
             this.Controls.Add(this.txtNombrePlan);
             this.Controls.Add(this.lblPlan);

@@ -77,5 +77,12 @@ namespace pryRinticshAcademia
             }
                 
         }
+
+        private void btnPlanes_Click(object sender, EventArgs e)
+        {
+            frmCargaPlanes frmCargaPlanes = new frmCargaPlanes();
+            this.Hide();
+            frmCargaPlanes.ShowDialog();
+        }
     }
 }
