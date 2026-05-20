@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmCargaPlanes));
             this.btnAgregar = new System.Windows.Forms.Button();
             this.lblPlan = new System.Windows.Forms.Label();
             this.txtNombrePlan = new System.Windows.Forms.TextBox();
@@ -37,12 +38,15 @@
             // 
             // btnAgregar
             // 
+            this.btnAgregar.BackColor = System.Drawing.Color.LightBlue;
+            this.btnAgregar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnAgregar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAgregar.Location = new System.Drawing.Point(190, 55);
             this.btnAgregar.Name = "btnAgregar";
             this.btnAgregar.Size = new System.Drawing.Size(76, 28);
             this.btnAgregar.TabIndex = 0;
             this.btnAgregar.Text = "Agregar";
-            this.btnAgregar.UseVisualStyleBackColor = true;
+            this.btnAgregar.UseVisualStyleBackColor = false;
             this.btnAgregar.Click += new System.EventHandler(this.btnAgregar_Click);
             // 
             // lblPlan
@@ -63,12 +67,15 @@
             // 
             // btnListar
             // 
+            this.btnListar.BackColor = System.Drawing.Color.LightBlue;
+            this.btnListar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnListar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnListar.Location = new System.Drawing.Point(105, 55);
             this.btnListar.Name = "btnListar";
             this.btnListar.Size = new System.Drawing.Size(76, 27);
             this.btnListar.TabIndex = 3;
             this.btnListar.Text = "Listar";
-            this.btnListar.UseVisualStyleBackColor = true;
+            this.btnListar.UseVisualStyleBackColor = false;
             this.btnListar.Click += new System.EventHandler(this.btnListar_Click);
             // 
             // lstPlanes
@@ -83,13 +90,15 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(445, 375);
+            this.ClientSize = new System.Drawing.Size(296, 234);
             this.Controls.Add(this.lstPlanes);
             this.Controls.Add(this.btnListar);
             this.Controls.Add(this.txtNombrePlan);
             this.Controls.Add(this.lblPlan);
             this.Controls.Add(this.btnAgregar);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmCargaPlanes";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmCargaPlanes";
             this.Load += new System.EventHandler(this.frmCargaPlanes_Load);
             this.ResumeLayout(false);

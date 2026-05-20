@@ -40,6 +40,7 @@ namespace pryRinticshAcademia
                     txtNombrePlan.Enabled = false;
                     btnAgregar.Enabled = false;
                 }
+                txtNombrePlan.Focus();
             }
         }
 

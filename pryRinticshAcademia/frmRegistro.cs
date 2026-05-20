@@ -21,6 +21,9 @@ namespace pryRinticshAcademia
         string varPlan;
         bool varActivo;
 
+        int i = 0;
+        string[,] matMaterias = new string[2,5];
+
         public frmRegistro()
         {
             InitializeComponent();
@@ -64,18 +67,26 @@ namespace pryRinticshAcademia
             {
                 MessageBox.Show("Registro Exitoso" + "\nCodigo: " + mskCodigo.Text + "\nNombre: " + txtNombre.Text + "\nPlan: " + cmbPlan.SelectedItem.ToString(), "Registro - Info", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
-            varCodigo = Convert.ToInt32(mskCodigo.Text);
-            varNombre = txtNombre.Text;
-            varPlan = cmbPlan.SelectedItem.ToString();
+            //varCodigo = Convert.ToInt32(mskCodigo.Text);
+            //varNombre = txtNombre.Text;
+            //varPlan = cmbPlan.SelectedItem.ToString();
+
+            matMaterias[i,0] = mskCodigo.Text;
+            matMaterias[i,1] = txtNombre.Text;
+            matMaterias[i,2] = cmbPlan.SelectedItem.ToString();
+            
+
             if (chkActivo.Checked == true)
             {
-                    varActivo = true;
+                matMaterias[i,3] = "Activo";
+                varActivo = true;
             }
             else
             {
-                    varActivo = false;
+                matMaterias[i,3] = "Inactivo";
+                varActivo = false;
             }
-                
+            i++;
         }
 
         private void btnPlanes_Click(object sender, EventArgs e)
