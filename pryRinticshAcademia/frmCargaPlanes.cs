@@ -42,5 +42,13 @@ namespace pryRinticshAcademia
                 }
             }
         }
+
+        private void btnListar_Click(object sender, EventArgs e)
+        {
+            for (int i = 0; i < arrayPlan.Length; i++)
+            {
+                lstPlanes.Items.Add(arrayPlan[i]);
+            } 
+        }
     }
 }

@@ -32,13 +32,14 @@
             this.lblPlan = new System.Windows.Forms.Label();
             this.txtNombrePlan = new System.Windows.Forms.TextBox();
             this.btnListar = new System.Windows.Forms.Button();
+            this.lstPlanes = new System.Windows.Forms.ListBox();
             this.SuspendLayout();
             // 
             // btnAgregar
             // 
-            this.btnAgregar.Location = new System.Drawing.Point(153, 55);
+            this.btnAgregar.Location = new System.Drawing.Point(190, 55);
             this.btnAgregar.Name = "btnAgregar";
-            this.btnAgregar.Size = new System.Drawing.Size(104, 54);
+            this.btnAgregar.Size = new System.Drawing.Size(76, 28);
             this.btnAgregar.TabIndex = 0;
             this.btnAgregar.Text = "Agregar";
             this.btnAgregar.UseVisualStyleBackColor = true;
@@ -57,23 +58,33 @@
             // 
             this.txtNombrePlan.Location = new System.Drawing.Point(105, 29);
             this.txtNombrePlan.Name = "txtNombrePlan";
-            this.txtNombrePlan.Size = new System.Drawing.Size(152, 20);
+            this.txtNombrePlan.Size = new System.Drawing.Size(161, 20);
             this.txtNombrePlan.TabIndex = 2;
             // 
             // btnListar
             // 
-            this.btnListar.Location = new System.Drawing.Point(105, 115);
+            this.btnListar.Location = new System.Drawing.Point(105, 55);
             this.btnListar.Name = "btnListar";
-            this.btnListar.Size = new System.Drawing.Size(104, 54);
+            this.btnListar.Size = new System.Drawing.Size(76, 27);
             this.btnListar.TabIndex = 3;
             this.btnListar.Text = "Listar";
             this.btnListar.UseVisualStyleBackColor = true;
+            this.btnListar.Click += new System.EventHandler(this.btnListar_Click);
+            // 
+            // lstPlanes
+            // 
+            this.lstPlanes.FormattingEnabled = true;
+            this.lstPlanes.Location = new System.Drawing.Point(15, 108);
+            this.lstPlanes.Name = "lstPlanes";
+            this.lstPlanes.Size = new System.Drawing.Size(251, 95);
+            this.lstPlanes.TabIndex = 4;
             // 
             // frmCargaPlanes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(445, 375);
+            this.Controls.Add(this.lstPlanes);
             this.Controls.Add(this.btnListar);
             this.Controls.Add(this.txtNombrePlan);
             this.Controls.Add(this.lblPlan);
@@ -92,5 +103,6 @@
         private System.Windows.Forms.Label lblPlan;
         private System.Windows.Forms.TextBox txtNombrePlan;
         private System.Windows.Forms.Button btnListar;
+        private System.Windows.Forms.ListBox lstPlanes;
     }
 }
