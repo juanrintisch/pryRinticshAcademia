@@ -176,12 +176,15 @@
             // 
             // btnPlanes
             // 
-            this.btnPlanes.Location = new System.Drawing.Point(214, 82);
+            this.btnPlanes.BackColor = System.Drawing.Color.LightBlue;
+            this.btnPlanes.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnPlanes.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPlanes.Location = new System.Drawing.Point(215, 82);
             this.btnPlanes.Name = "btnPlanes";
             this.btnPlanes.Size = new System.Drawing.Size(109, 23);
             this.btnPlanes.TabIndex = 12;
             this.btnPlanes.Text = "Registrar Planes";
-            this.btnPlanes.UseVisualStyleBackColor = true;
+            this.btnPlanes.UseVisualStyleBackColor = false;
             this.btnPlanes.Click += new System.EventHandler(this.btnPlanes_Click);
             // 
             // frmRegistro
