@@ -64,6 +64,18 @@ namespace pryRinticshAcademia
             {
                 MessageBox.Show("Registro Exitoso" + "\nCodigo: " + mskCodigo.Text + "\nNombre: " + txtNombre.Text + "\nPlan: " + cmbPlan.SelectedItem.ToString(), "Registro - Info", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
+            varCodigo = Convert.ToInt32(mskCodigo.Text);
+            varNombre = txtNombre.Text;
+            varPlan = cmbPlan.SelectedItem.ToString();
+            if (chkActivo.Checked == true)
+            {
+                    varActivo = true;
+            }
+            else
+            {
+                    varActivo = false;
+            }
+                
         }
     }
 }

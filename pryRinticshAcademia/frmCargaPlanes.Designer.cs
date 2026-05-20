@@ -1,0 +1,96 @@
+﻿namespace pryRinticshAcademia
+{
+    partial class frmCargaPlanes
+    {
+        /// <summary>
+        /// Required designer variable.
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
+
+        /// <summary>
+        /// Clean up any resources being used.
+        /// </summary>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        #region Windows Form Designer generated code
+
+        /// <summary>
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
+        /// </summary>
+        private void InitializeComponent()
+        {
+            this.btnAgregar = new System.Windows.Forms.Button();
+            this.lblPlan = new System.Windows.Forms.Label();
+            this.txtNombrePlan = new System.Windows.Forms.TextBox();
+            this.btnListar = new System.Windows.Forms.Button();
+            this.SuspendLayout();
+            // 
+            // btnAgregar
+            // 
+            this.btnAgregar.Location = new System.Drawing.Point(153, 55);
+            this.btnAgregar.Name = "btnAgregar";
+            this.btnAgregar.Size = new System.Drawing.Size(104, 54);
+            this.btnAgregar.TabIndex = 0;
+            this.btnAgregar.Text = "Agregar";
+            this.btnAgregar.UseVisualStyleBackColor = true;
+            this.btnAgregar.Click += new System.EventHandler(this.btnAgregar_Click);
+            // 
+            // lblPlan
+            // 
+            this.lblPlan.AutoSize = true;
+            this.lblPlan.Location = new System.Drawing.Point(12, 32);
+            this.lblPlan.Name = "lblPlan";
+            this.lblPlan.Size = new System.Drawing.Size(87, 13);
+            this.lblPlan.TabIndex = 1;
+            this.lblPlan.Text = "Nombre Del Plan";
+            // 
+            // txtNombrePlan
+            // 
+            this.txtNombrePlan.Location = new System.Drawing.Point(105, 29);
+            this.txtNombrePlan.Name = "txtNombrePlan";
+            this.txtNombrePlan.Size = new System.Drawing.Size(152, 20);
+            this.txtNombrePlan.TabIndex = 2;
+            // 
+            // btnListar
+            // 
+            this.btnListar.Location = new System.Drawing.Point(105, 115);
+            this.btnListar.Name = "btnListar";
+            this.btnListar.Size = new System.Drawing.Size(104, 54);
+            this.btnListar.TabIndex = 3;
+            this.btnListar.Text = "Listar";
+            this.btnListar.UseVisualStyleBackColor = true;
+            // 
+            // frmCargaPlanes
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(475, 406);
+            this.Controls.Add(this.btnListar);
+            this.Controls.Add(this.txtNombrePlan);
+            this.Controls.Add(this.lblPlan);
+            this.Controls.Add(this.btnAgregar);
+            this.Name = "frmCargaPlanes";
+            this.Text = "frmCargaPlanes";
+            this.Load += new System.EventHandler(this.frmCargaPlanes_Load);
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
+        }
+
+        #endregion
+
+        private System.Windows.Forms.Button btnAgregar;
+        private System.Windows.Forms.Label lblPlan;
+        private System.Windows.Forms.TextBox txtNombrePlan;
+        private System.Windows.Forms.Button btnListar;
+    }
+}
