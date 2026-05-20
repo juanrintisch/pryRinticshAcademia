@@ -15,6 +15,7 @@ namespace pryRinticshAcademia
     {
 
         string[] arrayPlan = new string[4];
+        int varIndice = 0;  
 
         public frmCargaPlanes()
         {
@@ -28,7 +29,13 @@ namespace pryRinticshAcademia
 
         private void btnAgregar_Click(object sender, EventArgs e)
         {
-
+            if (txtNombrePlan.Text != "")
+            {
+                arrayPlan[varIndice] = txtNombrePlan.Text;
+                varIndice++;
+                txtNombrePlan.Clear();
+                MessageBox.Show("Plan Agregado con Exito", "Carga Planes - Info", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
         }
     }
 }
