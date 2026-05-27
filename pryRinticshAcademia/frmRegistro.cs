@@ -23,6 +23,8 @@ namespace pryRinticshAcademia
 
         int i = 0;
         string[,] matMaterias = new string[2,5];
+        
+
 
         public frmRegistro()
         {
@@ -93,7 +95,7 @@ namespace pryRinticshAcademia
                 MessageBox.Show("Registro Lleno", "Registro - Info", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 btnRegistrar.Enabled = false;
             }
-
+            
 
             mskCodigo.Clear();
             txtNombre.Clear();
@@ -112,6 +114,12 @@ namespace pryRinticshAcademia
 
         private void btnCancelar_Click(object sender, EventArgs e)
         {
+            
+            mskCodigo.Clear();
+            txtNombre.Clear();
+            cmbPlan.SelectedIndex = -1;
+            chkActivo.Checked = false;
+            mskCodigo.Focus();
 
         }
     }
