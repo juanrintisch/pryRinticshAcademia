@@ -31,7 +31,7 @@ namespace pryRinticshAcademia
 
         private void btnListado_Click(object sender, EventArgs e)
         {
-            frmListado frmListado = new frmListado();
+            frmListado frmListado = new frmListado();            
             this.Hide();
             frmListado.ShowDialog();
         }
@@ -100,6 +100,7 @@ namespace pryRinticshAcademia
             cmbPlan.SelectedIndex = -1;
             chkActivo.Checked = false;
             mskCodigo.Focus();
+
         }
 
         private void btnPlanes_Click(object sender, EventArgs e)
@@ -107,6 +108,11 @@ namespace pryRinticshAcademia
             frmCargaPlanes frmCargaPlanes = new frmCargaPlanes();
             this.Hide();
             frmCargaPlanes.ShowDialog();
+        }
+
+        private void btnCancelar_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

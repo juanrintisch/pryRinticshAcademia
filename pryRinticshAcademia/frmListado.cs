@@ -13,6 +13,9 @@ namespace pryRinticshAcademia
 {
     public partial class frmListado : Form
     {
+
+        
+
         public frmListado()
         {
             InitializeComponent();
@@ -67,6 +70,29 @@ namespace pryRinticshAcademia
                 cmbPlanDos.Enabled = false;
             }
 
+        }
+
+        private void rdoTodo_CheckedChanged(object sender, EventArgs e)
+        {
+            if (rdoTodo.Checked == true)
+            {
+                mskCodigoDos.Enabled = true;
+                txtNombreDos.Enabled = true;
+                cmbPlanDos.Enabled = true;
+            }
+            else
+            {
+                mskCodigoDos.Enabled = false;
+                txtNombreDos.Enabled = false;
+                cmbPlanDos.Enabled = false;
+            }
+        }
+
+        private void btnVolver_Click(object sender, EventArgs e)
+        {
+            frmRegistro frmRegistro = new frmRegistro();
+            this.Hide();
+            frmRegistro.ShowDialog();
         }
     }
 }

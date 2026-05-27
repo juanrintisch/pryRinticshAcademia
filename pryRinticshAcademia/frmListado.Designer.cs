@@ -37,13 +37,14 @@
             this.rdoPlan = new System.Windows.Forms.RadioButton();
             this.rdoCodigo = new System.Windows.Forms.RadioButton();
             this.rdoTodo = new System.Windows.Forms.RadioButton();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dtaMaterias = new System.Windows.Forms.DataGridView();
             this.columnaCodigo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.columnaNombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.columnaPlan = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.columnaActivo = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btnVolver = new System.Windows.Forms.Button();
             this.grpBuscar.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtaMaterias)).BeginInit();
             this.SuspendLayout();
             // 
             // grpBuscar
@@ -142,19 +143,20 @@
             this.rdoTodo.TabStop = true;
             this.rdoTodo.Text = "Todo";
             this.rdoTodo.UseVisualStyleBackColor = true;
+            this.rdoTodo.CheckedChanged += new System.EventHandler(this.rdoTodo_CheckedChanged);
             // 
-            // dataGridView1
+            // dtaMaterias
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dtaMaterias.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dtaMaterias.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.columnaCodigo,
             this.columnaNombre,
             this.columnaPlan,
             this.columnaActivo});
-            this.dataGridView1.Location = new System.Drawing.Point(249, 12);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(444, 159);
-            this.dataGridView1.TabIndex = 1;
+            this.dtaMaterias.Location = new System.Drawing.Point(249, 12);
+            this.dtaMaterias.Name = "dtaMaterias";
+            this.dtaMaterias.Size = new System.Drawing.Size(444, 159);
+            this.dtaMaterias.TabIndex = 1;
             // 
             // columnaCodigo
             // 
@@ -180,12 +182,23 @@
             this.columnaActivo.Name = "columnaActivo";
             this.columnaActivo.ReadOnly = true;
             // 
+            // btnVolver
+            // 
+            this.btnVolver.Location = new System.Drawing.Point(13, 178);
+            this.btnVolver.Name = "btnVolver";
+            this.btnVolver.Size = new System.Drawing.Size(75, 23);
+            this.btnVolver.TabIndex = 2;
+            this.btnVolver.Text = "Volver";
+            this.btnVolver.UseVisualStyleBackColor = true;
+            this.btnVolver.Click += new System.EventHandler(this.btnVolver_Click);
+            // 
             // frmListado
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(711, 186);
-            this.Controls.Add(this.dataGridView1);
+            this.ClientSize = new System.Drawing.Size(711, 213);
+            this.Controls.Add(this.btnVolver);
+            this.Controls.Add(this.dtaMaterias);
             this.Controls.Add(this.grpBuscar);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmListado";
@@ -194,7 +207,7 @@
             this.Load += new System.EventHandler(this.frmListado_Load);
             this.grpBuscar.ResumeLayout(false);
             this.grpBuscar.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtaMaterias)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -209,10 +222,11 @@
         private System.Windows.Forms.RadioButton rdoPlan;
         private System.Windows.Forms.RadioButton rdoCodigo;
         private System.Windows.Forms.RadioButton rdoTodo;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dtaMaterias;
         private System.Windows.Forms.DataGridViewTextBoxColumn columnaCodigo;
         private System.Windows.Forms.DataGridViewTextBoxColumn columnaNombre;
         private System.Windows.Forms.DataGridViewTextBoxColumn columnaPlan;
         private System.Windows.Forms.DataGridViewTextBoxColumn columnaActivo;
+        private System.Windows.Forms.Button btnVolver;
     }
 }
