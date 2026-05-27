@@ -80,13 +80,26 @@ namespace pryRinticshAcademia
             {
                 matMaterias[i,3] = "Activo";
                 varActivo = true;
+                i++;
             }
             else
             {
                 matMaterias[i,3] = "Inactivo";
                 varActivo = false;
+                i++;
             }
-            i++;
+            if (i >= matMaterias.GetLength(0))
+            {
+                MessageBox.Show("Registro Lleno", "Registro - Info", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                btnRegistrar.Enabled = false;
+            }
+
+
+            mskCodigo.Clear();
+            txtNombre.Clear();
+            cmbPlan.SelectedIndex = -1;
+            chkActivo.Checked = false;
+            mskCodigo.Focus();
         }
 
         private void btnPlanes_Click(object sender, EventArgs e)

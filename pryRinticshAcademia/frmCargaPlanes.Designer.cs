@@ -44,7 +44,7 @@
             this.btnAgregar.Location = new System.Drawing.Point(190, 55);
             this.btnAgregar.Name = "btnAgregar";
             this.btnAgregar.Size = new System.Drawing.Size(76, 28);
-            this.btnAgregar.TabIndex = 0;
+            this.btnAgregar.TabIndex = 2;
             this.btnAgregar.Text = "Agregar";
             this.btnAgregar.UseVisualStyleBackColor = false;
             this.btnAgregar.Click += new System.EventHandler(this.btnAgregar_Click);
@@ -63,7 +63,7 @@
             this.txtNombrePlan.Location = new System.Drawing.Point(105, 29);
             this.txtNombrePlan.Name = "txtNombrePlan";
             this.txtNombrePlan.Size = new System.Drawing.Size(161, 20);
-            this.txtNombrePlan.TabIndex = 2;
+            this.txtNombrePlan.TabIndex = 1;
             // 
             // btnListar
             // 

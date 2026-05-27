@@ -29,7 +29,12 @@ namespace pryRinticshAcademia
 
         private void btnAgregar_Click(object sender, EventArgs e)
         {
-            if (txtNombrePlan.Text != "")
+
+            if (txtNombrePlan.Text == "")
+            {
+                MessageBox.Show("Por Favor Ingrese un Plan", "Carga Planes - Info", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }            
+            else if (txtNombrePlan.Text != "")
             {
                 arrayPlan[varIndice] = txtNombrePlan.Text;
                 varIndice++;
@@ -49,7 +54,7 @@ namespace pryRinticshAcademia
             for (int i = 0; i < arrayPlan.Length; i++)
             {
                 lstPlanes.Items.Add(arrayPlan[i]);
-            } 
+            }
         }
     }
 }

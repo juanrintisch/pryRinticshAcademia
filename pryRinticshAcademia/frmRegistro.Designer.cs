@@ -88,7 +88,7 @@
             this.mskCodigo.Mask = "99999";
             this.mskCodigo.Name = "mskCodigo";
             this.mskCodigo.Size = new System.Drawing.Size(39, 20);
-            this.mskCodigo.TabIndex = 4;
+            this.mskCodigo.TabIndex = 0;
             this.mskCodigo.ValidatingType = typeof(int);
             // 
             // txtNombre
@@ -96,7 +96,7 @@
             this.txtNombre.Location = new System.Drawing.Point(88, 50);
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(121, 20);
-            this.txtNombre.TabIndex = 5;
+            this.txtNombre.TabIndex = 1;
             // 
             // cmbPlan
             // 
@@ -109,7 +109,7 @@
             this.cmbPlan.Location = new System.Drawing.Point(88, 84);
             this.cmbPlan.Name = "cmbPlan";
             this.cmbPlan.Size = new System.Drawing.Size(121, 21);
-            this.cmbPlan.TabIndex = 6;
+            this.cmbPlan.TabIndex = 2;
             // 
             // chkActivo
             // 
@@ -117,7 +117,7 @@
             this.chkActivo.Location = new System.Drawing.Point(88, 121);
             this.chkActivo.Name = "chkActivo";
             this.chkActivo.Size = new System.Drawing.Size(15, 14);
-            this.chkActivo.TabIndex = 7;
+            this.chkActivo.TabIndex = 4;
             this.chkActivo.UseVisualStyleBackColor = true;
             // 
             // btnListado
@@ -128,7 +128,7 @@
             this.btnListado.Location = new System.Drawing.Point(12, 158);
             this.btnListado.Name = "btnListado";
             this.btnListado.Size = new System.Drawing.Size(75, 23);
-            this.btnListado.TabIndex = 8;
+            this.btnListado.TabIndex = 5;
             this.btnListado.Text = "Listado";
             this.btnListado.UseVisualStyleBackColor = false;
             this.btnListado.Click += new System.EventHandler(this.btnListado_Click);
@@ -141,7 +141,7 @@
             this.btnCancelar.Location = new System.Drawing.Point(168, 158);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(75, 23);
-            this.btnCancelar.TabIndex = 9;
+            this.btnCancelar.TabIndex = 6;
             this.btnCancelar.Text = "Cancelar";
             this.btnCancelar.UseVisualStyleBackColor = false;
             // 
@@ -153,7 +153,7 @@
             this.btnRegistrar.Location = new System.Drawing.Point(249, 158);
             this.btnRegistrar.Name = "btnRegistrar";
             this.btnRegistrar.Size = new System.Drawing.Size(75, 23);
-            this.btnRegistrar.TabIndex = 10;
+            this.btnRegistrar.TabIndex = 7;
             this.btnRegistrar.Text = "Registrar";
             this.btnRegistrar.UseVisualStyleBackColor = false;
             this.btnRegistrar.Click += new System.EventHandler(this.btnRegistrar_Click);
@@ -179,10 +179,10 @@
             this.btnPlanes.BackColor = System.Drawing.Color.LightBlue;
             this.btnPlanes.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnPlanes.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPlanes.Location = new System.Drawing.Point(215, 82);
+            this.btnPlanes.Location = new System.Drawing.Point(215, 84);
             this.btnPlanes.Name = "btnPlanes";
-            this.btnPlanes.Size = new System.Drawing.Size(109, 23);
-            this.btnPlanes.TabIndex = 12;
+            this.btnPlanes.Size = new System.Drawing.Size(109, 21);
+            this.btnPlanes.TabIndex = 3;
             this.btnPlanes.Text = "Registrar Planes";
             this.btnPlanes.UseVisualStyleBackColor = false;
             this.btnPlanes.Click += new System.EventHandler(this.btnPlanes_Click);
